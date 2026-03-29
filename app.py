@@ -78,6 +78,7 @@ def chat():
         
         if response.status_code != 200:
             error_msg = response_data.get('error', {}).get('message', 'Desconocido')
+            
             if response.status_code == 429:
                 lobifer_error = "[STICKER:sleeping] ¡Auuuu! 🐾 Lobo cansado. Me enviaste muchos mensajes demasiado rápido y me quedé sin aliento (Límite de mensajes gratuitos alcanzado). ¡Dame unos 40 segunditos para recuperarme y vuelve a intentarlo!"
                 return jsonify({"respuesta": lobifer_error})
