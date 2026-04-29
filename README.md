@@ -1,48 +1,65 @@
-# Asistente de Soporte para Inventario y Ventas
+# ChatBot-LobiFind — Asistente Virtual con IA
 
-Aplicación web creada con Python, Flask y la API de OpenAI. Funciona como un asistente chatbot que ayuda a los usuarios a entender cómo usar un sistema de inventario.
+Aplicación web desarrollada con Python, Flask y la API de OpenAI. Funciona como un 
+asistente chatbot que responde preguntas frecuentes sobre el uso de LobiFind, 
+plataforma de asesorías universitarias en pares de la UTSJR.
 
-## Funcionalidades
-- Frontend con estilo de aplicación de mensajería (WhatsApp/Messenger).
-- Mantiene el historial de la conversación.
+> 💡 Proyecto personal propuesto como módulo complementario para LobiFind.
+
+---
+
+## ✨ Funcionalidades
+
+- Interfaz de chat inspirada en apps de mensajería (estilo WhatsApp/Messenger).
+- Responde preguntas frecuentes sobre el funcionamiento de LobiFind.
+- Mantiene el historial de la conversación durante la sesión.
 - Indicador de "escribiendo..." en tiempo real.
-- Interacción en la misma vista usando peticiones `fetch`.
-- Prompt de sistema configurado para actuar como experto en control de inventario y ventas.
+- Interacción dinámica sin recargar la página, usando peticiones `fetch`.
 
-## Requisitos previos
-- Python 3.8+ instalado.
-- Una Clave API de OpenAI válida.
+---
 
-## Instalación y ejecución
+## 🛠️ Tecnologías utilizadas
 
-1. **Clonar/Abrir el directorio del proyecto**
-   Asegúrate de estar en el directorio `ChatBot`.
+- **Backend:** Python, Flask
+- **Frontend:** HTML, CSS, JavaScript
+- **IA:** API de OpenAI (gpt-4o-mini)
 
-2. **Crear y activar un entorno virtual (Opcional pero recomendado)**
-   ```bash
-   python -m venv venv
-   # En Windows:
-   venv\Scripts\activate
-   # En macOS/Linux:
-   source venv/bin/activate
-   ```
+---
 
-3. **Instalar dependencias**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## ✅ Requisitos previos
 
-4. **Variables de entorno (.env)**
-   Crea un archivo llamado `.env` en el directorio raíz del proyecto y agrega tu clave API de OpenAI:
-   ```env
-   OPENAI_API_KEY=tu-clave-api-aqui
-   ```
-   **Nota respecto a los modelos de OpenAI**: Dentro de la solicitud se pidió usar el nombre `gpt-4.1-mini`. En caso de que recibas un mensaje de error indicando que dicho modelo no existe por parte de la API, entra al archivo `app.py` y modifícalo por el modelo en uso real actualmente: `gpt-4o-mini` o `gpt-3.5-turbo`.
+- Python 3.8 o superior instalado.
+- Una clave API de OpenAI válida.
 
-5. **Ejecutar la aplicación (Backend de Flask)**
-   ```bash
-   python app.py
-   ```
+---
 
-6. **Abrir en el navegador**
-   Ve a [http://127.0.0.1:5000](http://127.0.0.1:5000) o [http://localhost:5000](http://localhost:5000) y comienza a conversar.
+## 🚀 Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/rakerito/ChatBot-LobiFind.git
+cd ChatBot-LobiFind
+```
+
+### 2. Crear y activar un entorno virtual *(recomendado)*
+
+```bash
+python -m venv venv
+
+# En Windows:
+venv\Scripts\activate
+
+# En macOS/Linux:
+source venv/bin/activate
+```
+
+### 3. Instalar dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configurar variables de entorno
+
+Crea un archivo `.env` en la raíz del proyecto y agrega tu clave API:
