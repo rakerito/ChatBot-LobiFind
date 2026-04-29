@@ -63,3 +63,20 @@ pip install -r requirements.txt
 ### 4. Configurar variables de entorno
 
 Crea un archivo `.env` en la raíz del proyecto y agrega tu clave API:
+
+### 5. Ejecutar la aplicación
+
+```bash
+python app.py
+```
+
+### 6. Abrir en el navegador
+
+Ve a [http://localhost:5000](http://localhost:5000) y comienza a conversar.
+
+---
+
+## 👩‍💻 Autora
+
+**Raquel Pastor Gaytán**  
+[github.com/rakerito](https://github.com/rakerito)
